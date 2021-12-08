@@ -1,0 +1,74 @@
+body{
+  position: relative;
+	max-width: 100%;
+	width: 100%;
+	padding: 0px;
+	overflow-x: hidden;
+	font-size: 0.24rem;
+  /* background-color: #F85360; */
+  background:linear-gradient(0deg,rgba(249,83,95,1) 0%,rgba(231,31,81,1) 100%);
+    height: 100%;
+}
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+ul,
+li,
+dl,
+dd,
+strong,
+span,
+a,
+input,
+button,
+select,
+form,
+textarea,
+td {
+	padding: 0;
+	margin: 0;
+}
+img {
+	border: none;
+	display: block;
+	width: 100%;
+}
+ul,
+dl {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+body, ul, ol, li, dl, dt, dd, p, label, input, button, select, option, textarea, form, h1, h2, h3, h4, h5, h6, iframe {
+	margin: 0;
+	padding: 0;
+  }
+
+  img {
+	vertical-align: middle;
+	outline: none;
+	border: none;
+	max-width: 100%;
+  }
+  ul, ol, dl {
+	list-style: none;
+  }
+  a {
+	text-decoration: none;
+	color: #333;
+  }
+  a:focus, a:active {
+	outline: none;
+  }
+  input, button, select, option, textarea {
+	border: none;
+	background: transparent;
+	line-height: normal;
+	vertical-align: middle;
+	outline: none;
+  }

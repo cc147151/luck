@@ -1,0 +1,21 @@
+div {
+  box-sizing: border-box;
+}
+h3 {
+  font-size: 0.24rem;
+}
+
+.bgc {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.imgBgc {
+  position: relative;
+}
+.bgcImg {
+  width: 100%;
+  height: 5.5rem;
+}
+
