@@ -38,7 +38,6 @@ const luckFun = () => {
 };
 const luckEnd = () => {
   Toast('恭喜您中奖或者没中奖')
-  console.log("luckEnd");
 };
 const imgLoad =(e)=> {
   imgStyle.value=imgHook(e)

@@ -1,5 +1,4 @@
 import { ref } from "vue";
-const num = ref(1);
 // 使用解构视图是不会重新渲染的
 let imgStyle = ref({});
 const imgWidth = ref("");

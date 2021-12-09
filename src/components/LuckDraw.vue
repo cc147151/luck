@@ -79,7 +79,6 @@ const props = defineProps({
 watch(
   () => props.modelValue,
   (val, pre) => {
-    console.log(val, "prize")
     luck.prize = val
   }
 )
@@ -118,7 +117,6 @@ const luckDataInit = () => {
         .find(".luck-unit-" + index)
         .addClass("active")
       this.index = index
-      console.log("roll")
       return false
     },
     stop: function(index) {
@@ -128,7 +126,6 @@ const luckDataInit = () => {
   }
 }
 const roll = () => {
-  console.log(luck)
   luck.times += 1
   luck.roll()
   if (luck.times > luck.cycle + 10 && luck.prize == luck.index) {
@@ -147,7 +144,6 @@ const roll = () => {
       luck.speed -= 10
       // 将来这里变一下 >= 并且已经拿到后台返回的具体中将数字
     } else if (luck.times == luck.cycle) {
-      console.log(luck.times, luck.cycle)
       var index = (Math.random() * luck.count) | 0
       if (index > 5) {
         index = 7
