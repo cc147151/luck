@@ -12,7 +12,7 @@
       />
       <Button type="primary" @click="see">vant3的组件使用{{imgStyle}}</Button>
       <img class="ttt" src="../assets/k2.png" alt="">
-      <img class="img" :style="imgStyle.value" @load="imgLoad($event)" src="../assets/k2.png" alt="" srcset="">
+      <img ref="prizeImgRef" class="img" :style="imgStyle.value" @load="imgLoad($event)" src="../assets/k2.png" alt="" srcset="">
     </div>
   </div>
 </template>
@@ -25,6 +25,7 @@ import {imgHook} from '@/hooks/imgHook.js'  // 使用hook值得时候不要.valu
 import LuckDraw from "@/components/LuckDraw.vue";
 import { ref,reactive } from "vue";
 import { Button,Toast } from "vant";
+let prizeImgRef = ref(null)
 let prize = ref(-1); // 起始位置
 const luckDraw = ref(null);
 const imgWidth = ref('');
@@ -40,7 +41,7 @@ const luckEnd = () => {
   Toast('恭喜您中奖或者没中奖')
 };
 const imgLoad =(e)=> {
-  imgStyle.value=imgHook(e)
+  imgStyle.value=imgHook(prizeImgRef.value)
 }
 </script>
 <style lang="scss" scoped>
